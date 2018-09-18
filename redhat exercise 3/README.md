@@ -11,7 +11,7 @@ In /redhat exercise 3/, execute: "npm i", followed by "npm run build", followed 
 
 Additional notes:
 
-I used the react scripts provided by create-react-app to handle building and deploying to the localhost (building via npm), and used npm for dependency management as well. Behind the scenes webpack and browserify with babel is used to build the app.
+I used the react scripts provided by create-react-app to handle building and deploying to the localhost (building via npm), and used npm for dependency management as well. Behind the scenes webpack, browserify, and babel is used in building the app.
 
 I used React as the web framework, and organized the code into Containers and Components. Containers are classes that are responsible for data fetching and passing that data to specific component renderers - the Component classes. Component classes are responsible solely for rendering their received data. This pattern allows you to build applications via composition, with pages that have one or more containers, which use the modular and reusable components.
 
