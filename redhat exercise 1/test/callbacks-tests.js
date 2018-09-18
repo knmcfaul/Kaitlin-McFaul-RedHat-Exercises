@@ -1,4 +1,4 @@
-var Callbacks = require('../Exercise1/Callbacks');
+var Callbacks = require('../src/Callbacks');
 var assert = require('assert');
 
 describe('Callbacks', function() {

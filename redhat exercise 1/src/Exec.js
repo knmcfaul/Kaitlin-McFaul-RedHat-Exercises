@@ -1,4 +1,4 @@
-var Callbacks = require('../Exercise1/Callbacks');
+var Callbacks = require('./Callbacks');
 
 Callbacks.remoteMathService(function(err, answer) {
     if (err) console.log('error ', err);
