@@ -1,0 +1,46 @@
+#root {
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+    text-align: center;
+}
+
+.app .ant-layout {
+    min-height: calc(100%);
+}
+
+.app .header h2 {
+    color: white;
+}
+
+.app .ant-layout-sider {
+    background-color: #2a508d;
+}
+
+.app .sider-link {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    color: white;
+    background-color: #273b74
+}
+
+.app .sider-link:hover {
+    background-color: #3070b4;
+}
+
+.app .sider-link:visited {
+    text-decoration: none;
+}
+
+.app .ant-layout-footer {
+    background-color: #bdbec1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.app .empty-message {
+    color: red;
+    text-align: left;
+}

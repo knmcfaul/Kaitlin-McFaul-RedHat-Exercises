@@ -1,0 +1,130 @@
+:root {
+    --box-size: 50%;
+    --min-width: 400px;
+    --min-height: 450px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Overpass', 'sans-serif';
+}
+
+body {
+    background:
+            radial-gradient(circle at top center, #ededed, transparent),
+            linear-gradient(#bbb, #ededed);
+    background-attachment: fixed;
+}
+
+.box-container {
+    background: #fff;
+    position: absolute;
+    width: var(--box-size);
+    height: var(--box-size);
+    left: calc(50% - var(--box-size) / 2);
+    top: calc(50% - var(--box-size) / 2);
+    min-height: var(--min-height);
+    min-width: var(--min-width);
+}
+
+@media only screen and (max-width: 800px) {
+    .box-container {
+        left: calc(50% - var(--min-width) / 2);
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .box-container {
+        top: calc(50% - var(--min-height) / 2);
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .box-container {
+        top: 0;
+    }
+}
+
+.header-container {
+    position: relative;
+    height: 10%;
+    background-image:
+            linear-gradient(to right, #c00, transparent 5%),
+            linear-gradient(to left, #c00, transparent 5%),
+            linear-gradient(#c00, #470000);
+    border: 1px solid white;
+    min-height: 40px;
+}
+
+.header-title {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 8px);
+    color: white;
+    padding: 0 5%;
+}
+
+.tab-container {
+    display: flex;
+    height: 100%;
+    float: right;
+}
+
+.tab-container button {
+    height: 100%;
+    background: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 1rem;
+}
+
+.tab-container button:hover, .tab-container button:active, .tab-container button:focus {
+    background: radial-gradient(circle, #c00, #470000);
+    color: white;
+    outline: none;
+}
+
+.content {
+    padding: 2% 5%;
+}
+
+.info {
+    display: flex;
+    padding-top: 20px;
+}
+
+.info .categories {
+    display: inline-block;
+    width: 40%;
+}
+
+.info .categories div {
+    height: 30px;
+    padding: 5px 0;
+}
+
+.info .category-data {
+    display: inline-block;
+    width: 60%;
+}
+
+.info .category-data div {
+    height: 30px;
+    padding: 5px 0;
+}
+
+.info .category-data .active-status {
+    display: inline-block;
+    background-color: #008c00;
+    color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 18px;
+    padding: 4px 8px;
+    margin-bottom: 14px;
+}
